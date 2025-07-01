@@ -22,7 +22,9 @@ public class Role {
     private String description;
 
     // Constructores
-    public Role() {}
+    public Role() {
+        // Constructor vacío requerido por JPA
+    }
 
     public Role(String name, String description) {
         this.name = name;
@@ -34,23 +36,24 @@ public class Role {
         return id;
     }
 
-    public void setId(Long id) {
-        this.id = id;
-    }
-
     public String getName() {
         return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
     }
 
     public String getDescription() {
         return description;
     }
 
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
     public void setDescription(String description) {
         this.description = description;
     }
 }
+
