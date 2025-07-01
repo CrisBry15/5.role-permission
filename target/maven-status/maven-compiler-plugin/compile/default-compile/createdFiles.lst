@@ -1,0 +1,6 @@
+RoleController.class
+com\example\rolepermission\RolePermissionApplication.class
+RoleRepository.class
+ResponseHandler.class
+Role.class
+RoleService.class
