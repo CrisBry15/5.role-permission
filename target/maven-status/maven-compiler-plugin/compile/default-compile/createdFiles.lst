@@ -3,5 +3,6 @@ com\example\rolepermission\repository\RoleRepository.class
 com\example\rolepermission\repository\UserRoleRepository.class
 com\example\rolepermission\controller\RoleController.class
 com\example\rolepermission\service\RoleService.class
+com\example\rolepermission\RolePermissionApplication.class
 com\example\rolepermission\model\UserRole.class
 com\example\rolepermission\model\Role.class

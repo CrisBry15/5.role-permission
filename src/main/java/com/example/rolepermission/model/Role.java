@@ -28,7 +28,8 @@ public class Role {
     @OneToMany(mappedBy = "role", cascade = CascadeType.ALL, orphanRemoval = true)
     private List<UserRole> userRoles;
 
-    public Role() {}
+    public Role() {
+    }
 
     public Role(String name, String description) {
         this.name = name;
@@ -36,20 +37,35 @@ public class Role {
     }
 
     // Getters y setters
-    public Long getId() { return id; }
+    public Long getId() {
+        return id;
+    }
 
-    public void setId(Long id) { this.id = id; }
+    public void setId(Long id) {
+        this.id = id;
+    }
 
-    public String getName() { return name; }
+    public String getName() {
+        return name;
+    }
 
-    public void setName(String name) { this.name = name; }
+    public void setName(String name) {
+        this.name = name;
+    }
 
-    public String getDescription() { return description; }
+    public String getDescription() {
+        return description;
+    }
 
-    public void setDescription(String description) { this.description = description; }
+    public void setDescription(String description) {
+        this.description = description;
+    }
 
-    public List<UserRole> getUserRoles() { return userRoles; }
+    public List<UserRole> getUserRoles() {
+        return userRoles;
+    }
 
-    public void setUserRoles(List<UserRole> userRoles) { this.userRoles = userRoles; }
+    public void setUserRoles(List<UserRole> userRoles) {
+        this.userRoles = userRoles;
+    }
 }
-

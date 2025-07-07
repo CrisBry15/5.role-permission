@@ -25,7 +25,8 @@ public class UserRole {
     @JoinColumn(name = "role_id", nullable = false)
     private Role role;
 
-    public UserRole() {}
+    public UserRole() {
+    }
 
     public UserRole(Long userId, Role role) {
         this.userId = userId;
@@ -33,16 +34,27 @@ public class UserRole {
     }
 
     // Getters y setters
-    public Long getId() { return id; }
+    public Long getId() {
+        return id;
+    }
 
-    public void setId(Long id) { this.id = id; }
+    public void setId(Long id) {
+        this.id = id;
+    }
 
-    public Long getUserId() { return userId; }
+    public Long getUserId() {
+        return userId;
+    }
 
-    public void setUserId(Long userId) { this.userId = userId; }
+    public void setUserId(Long userId) {
+        this.userId = userId;
+    }
 
-    public Role getRole() { return role; }
+    public Role getRole() {
+        return role;
+    }
 
-    public void setRole(Role role) { this.role = role; }
+    public void setRole(Role role) {
+        this.role = role;
+    }
 }
-

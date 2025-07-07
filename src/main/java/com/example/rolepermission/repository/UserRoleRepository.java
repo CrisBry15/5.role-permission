@@ -9,6 +9,6 @@ import com.example.rolepermission.model.UserRole;
 
 @Repository
 public interface UserRoleRepository extends JpaRepository<UserRole, Long> {
+
     List<UserRole> findByUserId(Long userId);
 }
-
